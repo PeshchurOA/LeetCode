@@ -1,0 +1,24 @@
+// Title: Add Two Numbers
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/add-two-numbers/
+
+        while l1:
+            l1_number.append(l1.val)
+            l1 = l1.next
+        while l2:
+            l2_number.append(l2.val)
+            l2 = l2.next
+        l1_number.reverse()
+        l2_number.reverse()
+        su = list(map(int,tuple(str(int("".join(map(str,l1_number))) + int("".join
+(map(str,l2_number)))))))
+        su.reverse()
+
+        dummy = ListNode(0)
+        curr = dummy
+        for vall in su:
+            curr.next = ListNode(vall)
+        l2_number = []
+            curr = curr.next
+        return dummy.next
