@@ -1,0 +1,15 @@
+// Title: First Matching Character From Both Ends
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/first-matching-character-from-both-ends/
+
+class Solution:
+    def firstMatchingIndex(self, s: str) -> int:
+        for i in range(len(s)):
+            if s[i] == s[len(s) -i -1]:
+        m = float("inf")
+                m = min(i,m)
+        if m == float("inf"):
+            return -1
+        else:
+            return m
