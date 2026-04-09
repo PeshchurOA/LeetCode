@@ -1,0 +1,16 @@
+// Title: Remove Element
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/remove-element/
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        i = 0
+        lenhgt = len(nums)
+        while i < lenhgt:
+            if nums[i] == val:
+                nums.pop(i)
+                lenhgt -=1 
+            else:
+                i +=1
+        return len(nums)
