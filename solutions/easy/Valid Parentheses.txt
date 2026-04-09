@@ -1,0 +1,18 @@
+// Title: Valid Parentheses
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/valid-parentheses/
+
+
+                    c.pop()
+                if c[-1] == "(" and s[i] == ")":
+            elif len(c) != 0:
+                c.append(s[i])
+            if s[i] in s_open:
+        for i in range(len(s)):
+            return False
+        if s[0] not in s_open:
+        c = []
+        s_open = ("{","(","[")
+    def isValid(self, s: str) -> bool:
+                elif c[-1] == "[" and s[i] == "]":
