@@ -1,0 +1,8 @@
+// Title: Sqrt(x)
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/sqrt(x)/
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        return int(x**0.5)
