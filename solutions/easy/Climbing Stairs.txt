@@ -1,0 +1,15 @@
+// Title: Climbing Stairs
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/climbing-stairs/
+
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        m = [0, 1, 2, 3]
+            for i in range(4,n+1):
+                m.append(m[i-1]+m[i-2])
+            return m[-1]
+        if n > 3:
+        else:
+            return n
+
