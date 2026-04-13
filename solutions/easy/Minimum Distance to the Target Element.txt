@@ -1,0 +1,13 @@
+// Title: Minimum Distance to the Target Element
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-distance-to-the-target-element/
+
+class Solution:
+    def getMinDistance(self, nums: List[int], target: int, start: int) 
+-> int:
+        q = float("inf")
+        for i in range(len(nums)):
+            if nums[i] == target:
+                q = min(q, abs(i - start))
+        return q
