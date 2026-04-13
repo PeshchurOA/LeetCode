@@ -1,0 +1,15 @@
+// Title: Find the Degree of Each Vertex
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-the-degree-of-each-vertex/
+
+    def findDegrees(self, matrix: list[list[int]]) -> list[int]:
+        m·‌=·‌[]
+·‌·‌·‌·‌·‌·‌·‌·‌for·‌i·‌in·‌range(len(matrix)):
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌for·‌j·‌in·‌range(len(matrix)):
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌q·‌=·‌0
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌if·‌matrix[i][j]·‌==·‌1:
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌q+=1
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌m.append(q)
+·‌·‌·‌·‌·‌·‌·‌·‌return·‌m
+
