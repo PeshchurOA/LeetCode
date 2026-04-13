@@ -1,0 +1,11 @@
+// Title: Insert Greatest Common Divisors in Linked List
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/
+
+        for vall in s:
+            curr.next = ListNode(vall)
+            curr = curr.next
+
+        return dummy.next
+
