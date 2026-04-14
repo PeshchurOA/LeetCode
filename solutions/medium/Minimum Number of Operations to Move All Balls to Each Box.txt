@@ -1,0 +1,15 @@
+// Title: Minimum Number of Operations to Move All Balls to Each Box
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/
+
+    def minOperations(self, boxes: str) -> List[int]:
+        ans = []
+        boxes = tuple(boxes)
+        for i in range(len(boxes)):
+            s = []
+            for j in range(len(boxes)):
+                if boxes[j] == "1" and j != i:
+                    s.append(abs(i-j))
+            ans.append(sum(s))
+        return ans
