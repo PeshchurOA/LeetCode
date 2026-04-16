@@ -1,0 +1,15 @@
+// Title: Merge Nodes in Between Zeros
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/merge-nodes-in-between-zeros/
+
+        dummy = ListNode(0)
+        curr = dummy
+
+        for val in q:
+            curr.next = ListNode(val)
+            curr = curr.next
+
+        return dummy.next
+
+        
