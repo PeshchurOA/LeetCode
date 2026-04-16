@@ -1,0 +1,17 @@
+// Title: Shortest Distance to Target String in a Circular Array
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/
+
+        q = []
+            q.append(w.index(target))
+            w[w.index(target)] = ""
+        if not q:
+        s = float("inf")
+        while target in w:
+            return -1
+
+        for i in q:
+            s = min(s, abs(i - startIndex), abs(i - startIndex_2))
+        if q:
+            return s
