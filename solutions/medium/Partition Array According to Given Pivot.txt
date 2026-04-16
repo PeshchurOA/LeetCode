@@ -1,0 +1,19 @@
+// Title: Partition Array According to Given Pivot
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/partition-array-according-to-given-pivot/
+
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        left = []
+        right = []
+        for i in nums:
+            if i < pivot:
+                left.append(i)
+            elif i > pivot:
+                right.append(i)
+        new_nums = left + midl + right
+        return new_nums
+        midl = []
+            else:
+                midl.append(pivot)
+
