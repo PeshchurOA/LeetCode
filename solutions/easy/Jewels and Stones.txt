@@ -1,0 +1,13 @@
+// Title: Jewels and Stones
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/jewels-and-stones/
+
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        jewels = tuple(jewels)
+        stones = tuple(stones)
+        q = 0
+        for i in jewels:
+            q += stones.count(i)
+        return q
