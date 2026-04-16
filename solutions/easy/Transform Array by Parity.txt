@@ -1,0 +1,14 @@
+// Title: Transform Array by Parity
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/transform-array-by-parity/
+
+class Solution:
+    def transformArray(self, nums: List[int]) -> List[int]:
+        for i in range(len(nums)):
+            if nums[i] % 2 == 0:
+                nums[i] = 0
+            else:
+                nums[i] = 1
+        nums.sort()
+        return nums
