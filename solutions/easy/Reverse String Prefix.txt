@@ -1,0 +1,11 @@
+// Title: Reverse String Prefix
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-string-prefix/
+
+class Solution:
+    def reversePrefix(self, s: str, k: int) -> str:
+        rev = [x for x in s[:k]]
+        rev.reverse()
+        r = "".join(rev)
+        return r + s[k:]
