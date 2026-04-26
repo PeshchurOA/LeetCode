@@ -1,0 +1,17 @@
+// Title: Split a String in Balanced Strings
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/split-a-string-in-balanced-strings/
+
+class Solution:
+    def balancedStringSplit(self, s: str) -> int:
+        q = 0
+        r = ""
+        for i in s:
+            r += i
+            if r.count("R") == r.count("L"):
+                q += 1
+                r = ""
+                continue
+        return q
+                
