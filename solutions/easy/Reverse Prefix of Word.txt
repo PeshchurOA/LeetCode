@@ -1,0 +1,16 @@
+// Title: Reverse Prefix of Word
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-prefix-of-word/
+
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        q = 0
+        for i in range(0,len(word)):
+            if word[i] == ch:
+                q = i
+                break
+        r = [x for x in word[:q+1]]
+        r.reverse()
+        rev = "".join(r)
+        return rev + word[q+1:]
