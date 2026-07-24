@@ -1,0 +1,23 @@
+// Title: Merge Intervals
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/merge-intervals/
+
+                start_save = start
+                result.append([start,end])
+            elif start <= result[-1][1] and end >= result[-1][1]:
+                result[-1][1] = end
+            elif end >= result[-1][1]:
+                result.append([start,end])     
+                
+        return result
+            if end_save is None and start_save is None:
+                end_save = end
+        end_save = None
+
+        for start, end in intervals:
+        result = []
+        start_save = None
+        intervals = sorted(intervals, key= lambda x: x[0])
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+class Solution:
