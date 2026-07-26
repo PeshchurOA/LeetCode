@@ -1,0 +1,21 @@
+// Title: Separate Black and White Balls
+            // Difficulty: Medium
+            // Language: Python3
+            // Link: https://leetcode.com/problems/separate-black-and-white-balls/
+
+        count = 0
+        count_null = 0
+        count_one = 0
+        for char in s[::-1]:
+            #print(char)
+            if char == "0":
+                count_null +=1
+            elif char == "1":
+                count_one +=1
+                
+                count += count_null
+                
+        return count
+        s = list(s)
+    def minimumSteps(self, s: str) -> int:
+class Solution:
