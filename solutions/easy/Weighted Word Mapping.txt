@@ -1,0 +1,22 @@
+// Title: Weighted Word Mapping
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/weighted-word-mapping/
+
+            for i in word:
+                value_word += dict_alphabet[i]
+            
+            value_word = value_word % 26
+            for key, value in dict_alphabet_reverse.items():
+                
+                if key == value_word:
+                    result += value
+                    
+                    
+        return result
+
+
+
+
+
+
