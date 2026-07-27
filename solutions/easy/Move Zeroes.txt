@@ -1,0 +1,17 @@
+// Title: Move Zeroes
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/move-zeroes/
+
+        for curent in range(len(nums)-1):
+            if nums[current] != 0:
+                current +=1
+            elif nums[current] == 0:
+                nums.append(0)
+                nums.pop(current)
+                
+
+                
+        current = 0
+    def moveZeroes(self, nums: List[int]) -> None:
+class Solution:
