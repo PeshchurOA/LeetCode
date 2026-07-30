@@ -1,0 +1,8 @@
+// Title: Convert Date to Binary
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/convert-date-to-binary/
+
+class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        return "-".join(map(lambda x: bin(x)[2:], map(int, date.split("-"))))
