@@ -1,0 +1,21 @@
+// Title: Valid Palindrome
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/valid-palindrome/
+
+            if s[left].lower() not in alpha:
+                left +=1
+                continue
+            if s[right].lower() not in alpha:
+                right -=1
+                continue
+            if s[left].lower() != s[right].lower():
+                return False
+            
+            left +=1
+        while left < right:
+        right = len(s)-1
+        left = 0
+        alpha = "abcdefghijklmnopqrstuvwxyz0123456789"
+    def isPalindrome(self, s: str) -> bool:
+class Solution:
