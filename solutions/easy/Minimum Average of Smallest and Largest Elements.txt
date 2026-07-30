@@ -1,0 +1,16 @@
+// Title: Minimum Average of Smallest and Largest Elements
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-average-of-smallest-and-largest-elements/
+
+class Solution:
+    def minimumAverage(self, nums: List[int]) -> float:
+        averages = []
+        nums.sort()
+        while True:
+            maxElement = nums.pop(-1)
+            minElement = nums.pop(0)
+            averages.append((minElement + maxElement)/2)
+            if len(nums) <= 1:
+                return min(averages)
+        
