@@ -1,0 +1,11 @@
+// Title: Shuffle the Array
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/shuffle-the-array/
+
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        result = []
+        for i in range(n):
+            result.extend([nums[i],nums[i+n]])   
+        return result
