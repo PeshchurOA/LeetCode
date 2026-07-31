@@ -1,0 +1,11 @@
+// Title: Single Number
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/single-number/
+
+from collections import Counter
+    def singleNumber(self, nums: List[int]) -> int:
+        return sorted(Counter(nums).items(), key= lambda x: x[1])[0][0]
+class Solution:
+
+        
