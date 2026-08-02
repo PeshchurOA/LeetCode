@@ -1,0 +1,19 @@
+// Title: Sort Array By Parity II
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/sort-array-by-parity-ii/
+
+class Solution:
+    def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+        result = [0 for x in range(len(nums))]
+        left =0
+        right =1
+        for num in nums:
+            if num % 2 == 0:
+                result[left] = num
+                left +=2
+            else:
+                result[right] = num
+                right +=2
+        return result
+
