@@ -1,0 +1,23 @@
+// Title: Reverse Vowels of a String
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-vowels-of-a-string/
+
+        s =list(s)
+        vowels = ['a', 'e', 'i', 'o', 'u','A', 'E', 'I', 'O', 'U']
+        left =0
+        right =len(s)-1
+
+        while left <= right:
+            if not s[left] in vowels:
+                left +=1
+                continue
+            if not s[right] in vowels:
+                right -=1
+                continue
+            s[left], s[right] = s[right], s[left]
+            left +=1
+            right -=1
+        return "".join(s)
+    def reverseVowels(self, s: str) -> str:
+class Solution:
