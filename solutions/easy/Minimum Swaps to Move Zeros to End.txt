@@ -1,0 +1,16 @@
+// Title: Minimum Swaps to Move Zeros to End
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/
+
+class Solution:
+    def minimumSwaps(self, nums: list[int]) -> int:
+        nums[:] = nums[::-1]
+        count_null = nums.count(0)
+        right = 0
+        result = count_null
+        while right < count_null:
+            if nums[right] == 0 :
+                result -= 1
+            right +=1
+        return result
