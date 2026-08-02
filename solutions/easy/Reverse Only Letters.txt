@@ -1,0 +1,23 @@
+// Title: Reverse Only Letters
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-only-letters/
+
+class Solution:
+    def reverseOnlyLetters(self, s: str) -> str:
+        alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        s =list(s)
+        left =0
+        right =len(s)-1
+
+        while left < right:
+            if s[left] not in alpha:
+                left +=1
+            if s[right] not in alpha:
+                right -=1
+            s[left] , s[right] = s[right], s[left]
+            left +=1
+            right -=1
+                continue
+                continue
+        return "".join(s)
