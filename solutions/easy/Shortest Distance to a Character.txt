@@ -1,0 +1,19 @@
+// Title: Shortest Distance to a Character
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/shortest-distance-to-a-character/
+
+            check = s.find(c,check)
+            if check == -1:
+                break
+            c_index.append(check)
+            check += 1
+        check = 0
+        result = []
+        for i in range(len(s)):
+            if check != (len(c_index)-1) and abs(i - c_index[check]) >= abs(i - 
+                check +=1
+        while True:
+            c_index[check+1]):
+            result.append(abs(i - c_index[check]))
+        return result
