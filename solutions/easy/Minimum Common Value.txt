@@ -1,0 +1,14 @@
+// Title: Minimum Common Value
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-common-value/
+
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        nums1 =set(nums1)
+        nums2 = set(nums2)
+
+        result = nums1 & nums2
+        if result:
+            return min(result)
+        return -1
