@@ -1,0 +1,18 @@
+// Title: Duplicate Zeros
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/duplicate-zeros/
+
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        l = len(arr)
+        left = 0
+        while left < len(arr):
+            if arr[left] == 0:   
+                arr.insert(left,0)
+                left += 2
+            else:
+                left +=1
+        arr[:] = arr[:l]
+
+        
