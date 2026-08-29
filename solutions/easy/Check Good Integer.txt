@@ -1,0 +1,12 @@
+// Title: Check Good Integer
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/check-good-integer/
+
+class Solution:
+    def checkGoodInteger(self, n: int) -> bool:
+        digitSum = sum(map(int, tuple(str(n))))
+        squareSum = sum(map(lambda x: int(x)**2, tuple(str(n))))
+        if squareSum - digitSum >= 50:
+            return True
+        return False
