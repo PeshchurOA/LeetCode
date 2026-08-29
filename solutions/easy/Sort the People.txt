@@ -1,0 +1,11 @@
+// Title: Sort the People
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/sort-the-people/
+
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        result = []
+        for i in range(len(heights)):
+            result.append([names[i],heights[i]])
+        return list(map(lambda x: x[0],sorted(result, key= lambda x: x[1])))[::-1]
