@@ -1,0 +1,14 @@
+// Title: Find the Highest Altitude
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-the-highest-altitude/
+
+class Solution:
+    def largestAltitude(self, gain: List[int]) -> int:
+        result = []
+        for num in gain:
+            if result:
+                result.append(result[-1]+num)
+            else:
+                result.append(num)
+        return max(max(result),0)
