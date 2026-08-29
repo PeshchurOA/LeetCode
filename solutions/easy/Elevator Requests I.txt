@@ -1,0 +1,13 @@
+// Title: Elevator Requests I
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/elevator-requests-i/
+
+class Solution:
+    def elevatorRequests(self, n: int, requests: list[int]) -> int:
+        result = 0
+        for flor in requests:
+            result += abs(nowFlor - flor)
+        nowFlor = 0
+            nowFlor = flor
+        return result
