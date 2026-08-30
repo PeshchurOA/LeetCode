@@ -1,0 +1,8 @@
+// Title: Smallest Number With All Set Bits
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/smallest-number-with-all-set-bits/
+
+class Solution:
+    def smallestNumber(self, n: int) -> int:
+        return int(len(bin(n)[2:])*"1",2)
