@@ -1,0 +1,15 @@
+// Title: Sum of Unique Elements
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/sum-of-unique-elements/
+
+class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        countDict = {}
+        result = []
+        for num in nums:
+            countDict[num] = countDict.get(num,0)+1
+        for num, count in countDict.items():
+            if count == 1:
+                result.append(num)
+        return sum(result)
