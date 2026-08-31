@@ -1,0 +1,15 @@
+// Title: Sort Array By Parity
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/sort-array-by-parity/
+
+
+        while left < right:
+            if nums[left] % 2 == 0:
+                left +=1
+                continue
+            if nums[right] %2 != 0:
+                right -=1
+                continue
+            nums[left], nums[right] = nums[right], nums[left]
+        return nums
