@@ -1,0 +1,9 @@
+// Title: Find Missing Elements
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-missing-elements/
+
+class Solution:
+    def findMissingElements(self, nums: List[int]) -> List[int]:
+        nums_temp = set([i for i in range(min(nums), max(nums)+1)])
+        return sorted(list(nums_temp - set(nums)))
