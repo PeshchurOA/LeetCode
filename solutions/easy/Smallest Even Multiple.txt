@@ -1,0 +1,11 @@
+// Title: Smallest Even Multiple
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/smallest-even-multiple/
+
+class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        if n % 2 != 0:
+            return n * 2
+        else:
+            return n
