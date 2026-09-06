@@ -1,0 +1,14 @@
+// Title: Reverse Degree of a String
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/reverse-degree-of-a-string/
+
+class Solution:
+    def reverseDegree(self, s: str) -> int:
+        rev_alpha = ['z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 
+        'p', 'o', 'n', 'm', 'l', 'k', 'j', 'i', 'h', 'g', 'f', 'e', 'd', 
+        'c', 'b', 'a']
+        result = 0
+        for i in range(len(s)):
+            result += (rev_alpha.index(s[i])+1) * (1+i)
+        return result
