@@ -1,0 +1,11 @@
+// Title: Check if The Number is Fascinating
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/check-if-the-number-is-fascinating/
+
+class Solution:
+    def isFascinating(self, n: int) -> bool:
+        if len(q) == 9 and len(set(q)) == 9 and "0" not in q:
+            return True
+        q = list(f"{n}{n*2}{n*3}")
+        return False
