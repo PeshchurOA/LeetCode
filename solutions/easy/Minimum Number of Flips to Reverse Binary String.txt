@@ -1,0 +1,15 @@
+// Title: Minimum Number of Flips to Reverse Binary String
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/
+
+class Solution:
+    def minimumFlips(self, n: int) -> int:
+        n = bin(n)[2:]
+        n_ = "".join(reversed(n))
+        result = 0
+        for i in range(len(n)):
+            if n[i] != n_[i]:
+
+                result +=1
+        return result
