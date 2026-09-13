@@ -1,0 +1,9 @@
+// Title: Minimum Element After Replacement With Digit Sum
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/
+
+class Solution:
+    def minElement(self, nums: List[int]) -> int:
+        return min(map(lambda x: sum(list(map(int,tuple(str(x))))),nums))
+
