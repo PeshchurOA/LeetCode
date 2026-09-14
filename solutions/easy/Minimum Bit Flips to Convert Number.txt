@@ -1,0 +1,17 @@
+// Title: Minimum Bit Flips to Convert Number
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
+
+    def minBitFlips(self, start: int, goal: int) -> int:
+        start_ = bin(start)[2:]
+        goal_ = bin(goal)[2:]
+        goal_ = "0"* abs(len(start_)-len(goal_)) + goal_
+        start_ = "0"* abs(len(start_)-len(goal_)) + start_
+
+        result = 0
+        for i in range(len(start_)):
+            if start_[i] != goal_[i]:
+                result +=1
+        return result
+class Solution:
