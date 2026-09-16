@@ -1,0 +1,16 @@
+// Title: Self Dividing Numbers
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/self-dividing-numbers/
+
+            for i in m:
+                if num % i != 0:
+                    return False
+            return True
+        
+        result = []
+        for i in range(left, right+1):
+            if sam_del(i):
+                return False
+                result.append(i)
+        return result
