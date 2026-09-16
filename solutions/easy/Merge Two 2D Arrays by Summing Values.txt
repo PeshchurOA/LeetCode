@@ -1,0 +1,16 @@
+// Title: Merge Two 2D Arrays by Summing Values
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
+
+        l2 = len(nums2)
+        while left < l1 or right < l2:
+            if left < l1:
+                result[nums1[left][0]] = result.get(nums1[left][0],0) + 
+                nums1[left][1]
+            if right < l2:
+                result[nums2[right][0]] = result.get(nums2[right][0],0) 
+                + nums2[right][1]
+            left +=1
+            right +=1
+        return sorted(list(result.items()))
