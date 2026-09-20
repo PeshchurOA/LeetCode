@@ -1,0 +1,9 @@
+// Title: Maximum Sum With Exactly K Elements
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/
+
+class Solution:
+    def maximizeSum(self, nums: List[int], k: int) -> int:
+        return sum([x for x in range(max(nums),max(nums)+k)])
+        
