@@ -1,0 +1,16 @@
+// Title: Destination City
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/destination-city/
+
+class Solution:
+    def destCity(self, paths: list[list[str]]) -> str:
+        tmp = {}
+        for i,x in paths:
+            tmp[i] = tmp.get(i,0)+1
+            #tmp[x] = tmp.get(x,0)+1
+        for i,x in paths:
+            if i not in tmp:
+                return i
+            if x not in tmp:
+                return x
