@@ -1,0 +1,13 @@
+// Title: Find the Difference
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/find-the-difference/
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        s = sorted(list(tuple(s)))
+        t = sorted(list(tuple(t)))
+        for i in range(len(t)-1):
+            if s[i] != t[i]:
+                return t[i]
+        return t[-1]
