@@ -1,0 +1,11 @@
+// Title: Harshad Number
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/harshad-number/
+
+class Solution:
+    def sumOfTheDigitsOfHarshadNumber(self, x: int) -> int:
+        s = sum(map(int,tuple(str(x))))
+        if x % s == 0:
+            return s
+        return -1
