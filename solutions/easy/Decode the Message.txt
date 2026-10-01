@@ -1,0 +1,20 @@
+// Title: Decode the Message
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/decode-the-message/
+
+        d_tmp = {}
+        for i in range(len(tmp)):
+            d_tmp[tmp[i]] = alpha[i]
+        result = []
+        for i in message:
+            if i != " ":
+                result.append(d_tmp[i])
+            else:
+                result.append(" ")
+                tmp.append(char)
+            if char not in tmp and char != " ":
+        for char in key:
+        tmp = []
+        "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        return "".join(result)
