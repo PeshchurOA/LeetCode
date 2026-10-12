@@ -1,0 +1,9 @@
+// Title: Check Balanced String
+            // Difficulty: Easy
+            // Language: Python3
+            // Link: https://leetcode.com/problems/check-balanced-string/
+
+class Solution:
+    def isBalanced(self, num: str) -> bool:
+        num = list(map(int, tuple(num)))
+        return sum(x for x in num[::2]) == sum(x for x in num[1::2])
